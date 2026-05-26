@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA — Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- App Shell -->
+  <div class="app">
+
+    <!-- ===== SIDEBAR ===== -->
+    <div class="sidebar">
+
+      <div class="brand">
+        <div class="brand-name">AURA</div>
+        <div class="brand-sub">MUSIC PLAYER</div>
+      </div>
+
+      <div class="nav">
+        <div class="nav-item active">
+          <span class="nav-icon">♬</span>
+          <span>Now Playing</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">◈</span>
+          <span>Library</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">✦</span>
+          <span>Favourites</span>
+        </div>
+      </div>
+
+      <div class="section-label">Playlist</div>
+
+      <div class="playlist" id="playlist">
+        <!-- Track items injected by script.js -->
+      </div>
+
+    </div>
+    <!-- end sidebar -->
+
+    <!-- ===== MAIN PANEL ===== -->
+    <div class="main" id="main-content">
+      <!-- Content injected by script.js switchView() -->
+    </div>
+    <!-- end main -->
+
+  </div>
+  <!-- end app -->
+
+  <audio id="audio"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
